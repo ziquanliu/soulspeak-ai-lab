@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4e9">
+  <meta name="description" content="Soulspeak AI Lab studies how people can understand, question and guide increasingly powerful AI.">
+  <title>Soulspeak AI Lab</title>
+  <link rel="icon" href="assets/art/soulspeak-mark.png" type="image/png">
+  <link rel="preload" href="assets/fonts/GeistSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- A small displacement and a translucent grain give display text the edge of printed ink. -->
+  <svg class="filter-definitions" aria-hidden="true" focusable="false" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="ink" x="-4%" y="-7%" width="108%" height="114%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" seed="11" result="grain"/>
+        <feDisplacementMap in="SourceGraphic" in2="grain" scale="1.05" xChannelSelector="R" yChannelSelector="G" result="edges"/>
+        <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   -3.6 0 0 0 2.92" result="density"/>
+        <feComposite in="edges" in2="density" operator="in"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="brand" href="#top" aria-label="Soulspeak AI Lab home">
+        <img src="assets/art/soulspeak-mark.png" alt="" width="38" height="38">
+        <span class="printed">Soulspeak AI Lab</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero shell" aria-labelledby="vision-heading">
+      <div class="hero-copy">
+        <p class="eyebrow">Responsible AI research</p>
+        <h1 class="printed" id="vision-heading">Let the soul <span>speak.</span></h1>
+        <p class="vision">At Soulspeak AI Lab, we build responsible AI that people can understand, question and guide, so that even as machine intelligence explodes, the human soul has the final say.</p>
+        <a class="primary-link" href="#research">Explore our research <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="plate">
+        <img src="assets/art/harmonograph.webp" width="1152" height="912" fetchpriority="high"
+             alt="Fine gold and sage curves weave into a single looping trace on a dark green field.">
+        <figcaption>
+          <span>Harmonograph</span>
+          <span>Two oscillations in a 3:2 ratio</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="research shell" id="research" aria-labelledby="research-heading">
+      <h2 class="section-title printed" id="research-heading">Research questions</h2>
+      <div class="research-grid">
+        <article>
+          <h3>When does AI take a shortcut?</h3>
+          <p>We trace when a model settles on an answer and test whether its written reasoning reflects how it got there.</p>
+        </article>
+        <article>
+          <h3>When should we trust its confidence?</h3>
+          <p>We study whether a model’s confidence matches its chance of being right, even after someone challenges its answer.</p>
+        </article>
+        <article>
+          <h3>How can people steer a model?</h3>
+          <p>We study how to change what a model generates while preserving the behaviours people already rely on.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="publications" id="publications" aria-labelledby="publications-heading">
+      <div class="shell">
+        <div class="section-heading-row">
+          <h2 class="section-title printed" id="publications-heading">Selected publications</h2>
+          <a class="text-link" href="https://sites.google.com/view/ziquanliu">Full publication list <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="paper-list">
+          <li>
+            <p class="venue">NeurIPS 2026</p>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2609.35074">When Confidence Rises Too Early: Detecting Shortcut Reasoning via Premature Answer Commitment</a></h3>
+              <p class="authors">Zhaohan Zhang, Junjie Liu, Chengzhengxu Li, Chen Shen, Xiaoming Liu, Chao Shen, Jieping Ye, Ziquan Liu and Ioannis Patras</p>
+            </div>
+          </li>
+          <li>
+            <p class="venue">ACL 2026</p>
+            <div>
+              <h3><a href="https://aclanthology.org/2026.acl-long.1787/">Confidence Should Be Calibrated More Than One Turn Deep</a></h3>
+              <p class="authors">Zhaohan Zhang, Chengzhengxu Li, Xiaoming Liu, Chao Shen, Ziquan Liu and Ioannis Patras</p>
+            </div>
+          </li>
+          <li>
+            <p class="venue">ICML 2026</p>
+            <div>
+              <h3><a href="https://proceedings.mlr.press/v306/gaintseva26a.html">MidSteer: Optimal Affine Framework for Steering Generative Models</a></h3>
+              <p class="authors">Tatiana Gaintseva, Andrew Stepanov, Ziquan Liu, Martin Benning, Gregory Slabaugh, Jiankang Deng and Ismail Elezi</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="shell contact-inner">
+      <div>
+        <h2 class="section-title printed" id="contact-heading">Contact</h2>
+        <p>For research enquiries and collaborations</p>
+      </div>
+      <address>
+        <a class="contact-name" href="https://sites.google.com/view/ziquanliu">Dr Ziquan Liu <span aria-hidden="true">↗</span></a>
+        <p>School of Electronic Engineering and Computer Science<br>Queen Mary University of London</p>
+        <a class="contact-email" href="mailto:ziquan.liu@qmul.ac.uk">ziquan.liu@qmul.ac.uk</a>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
