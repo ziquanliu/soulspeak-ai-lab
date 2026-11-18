@@ -1,6 +1,6 @@
 # Soulspeak AI Lab
 
-A static research lab website built for GitHub Pages. The homepage includes the lab vision, three research questions, selected publications and contact details. HTML, CSS, artwork and web fonts are all included. Editing or publishing the site requires no installation or build command.
+A static research lab website built for GitHub Pages. The homepage carries the lab vision. Members, Publication and Research Highlight each have a separate page. The page uses HTML, CSS and bundled web fonts. Editing or publishing the site requires no installation or build command.
 
 ## Publish on GitHub Pages
 
@@ -16,13 +16,12 @@ The archive includes an optional `.nojekyll` file for plain static hosting. All 
 
 ## Edit or preview
 
-- Edit `index.html` to change the vision, research questions, publications or contact information. Each publication is one list item inside the section with `id="publications"`.
-- Edit `styles.css` to change the colours, layout or type. The colour variables are at the top. The print effect uses the `.printed` class and the inline SVG filter named `ink` in `index.html`.
-- The artwork is in `assets/art/`. The harmonograph traces two damped oscillations with a 3:2 frequency ratio.
+- Edit `index.html` for the vision, `members.html` for the roster, `publication.html` for the papers and `research-highlight.html` for the research highlight.
+- Edit `styles.css` to change the colours, layout or type. The colour variables are at the top.
 - To preview locally with Python 3, run `python3 -m http.server 8000` in the extracted directory and open <http://localhost:8000/>. The site uses relative asset paths and requires no JavaScript.
 
 ## Sources and font licences
 
-The profile and selected work come from [Ziquan Liu’s academic website](https://sites.google.com/view/ziquanliu). The contact email is listed on his [QMUL research profile](https://www.seresearch.qmul.ac.uk/cmai/people/zliu/). Publication titles on the site link to the papers.
+The profile and selected work come from [Ziquan Liu’s academic website](https://sites.google.com/view/ziquanliu). Publication titles on the site link to the papers.
 
 Display typography uses [Geist Serif Regular](https://github.com/vercel/geist-font). Body typography uses [Source Serif 4 Regular](https://github.com/adobe-fonts/source-serif). Both web fonts are bundled unmodified under the SIL Open Font License 1.1. Keep the accompanying [Geist licence](assets/fonts/Geist-OFL.txt) and [Source Serif licence](assets/fonts/SourceSerif-OFL.txt) with the font files.
