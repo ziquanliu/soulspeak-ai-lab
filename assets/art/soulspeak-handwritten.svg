@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="54" viewBox="0 0 164 54">
+  <title>Soulspeak</title>
+  <defs>
+    <filter id="ink-impression" x="-3%" y="-8%" width="106%" height="116%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".42 .59" numOctaves="2" seed="17" result="fibres"/>
+      <feDisplacementMap in="SourceGraphic" in2="fibres" scale="1.8" xChannelSelector="R" yChannelSelector="G" result="edge"/>
+      <feColorMatrix in="fibres" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -2.7 0 0 0 2.52" result="coverage"/>
+      <feComposite in="edge" in2="coverage" operator="in"/>
+    </filter>
+  </defs>
+  <g filter="url(#ink-impression)" fill="none" stroke="#243D30" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-2 82 29)">
+      <path stroke-width="2.9" d="M25 14.8c1.8-4.8-5.1-6.4-11.6-2.8-7.8 4.2-8.4 9.4-.9 12.4l6 2.4c7.2 3 6.4 7.5-.4 10.4-5.4 2.3-12.2 1.2-13.1-1.8"/>
+      <path stroke-width="2.65" d="M38.1 22.9c-4.8-3.2-10.5 3.1-11 8.5-.4 5.1 2.1 7.4 5.8 5.8 4.1-1.8 7.5-8.7 5.3-13.1-1.2-2.4-3.1-1.4-2.5 1.4.6 3.1 3.7 4.2 7.8 1.8"/>
+      <path stroke-width="2.8" d="M47.8 23.5c-2.1 6.1-5.7 15.4-.2 14.2 4.1-.9 8.7-9.4 10.9-15.4-1.5 5.5-4.3 14.7-1.7 15.2 1.3.2 3.5-1.5 5.1-3.5"/>
+      <path stroke-width="2.7" d="M63 32c4.4-5 11.6-16.8 11.4-21.2-.1-3.3-3.2-1.5-5.4 3-4.4 8.7-9.3 24.4-4.5 24.2 2.4-.1 5-3 7.5-5.4"/>
+      <g stroke="#762A32" stroke-width="2.65" transform="translate(-12 .4)">
+        <path d="M98.5 21.8c-1.1-3.4-7.8-.4-8.8 3.3-1.2 4.2 7.7 4.8 6.6 8.9-.9 3.5-7.6 5.3-9.2 2.9"/>
+        <path d="M98.4 34.4c3.2-3.5 6.1-8.6 8.8-12.9l-6.9 28.1c2.5-10 6.7-23.5 13-26.7 5.9-3 3.3 8.3-.8 12.6-2.8 3-5.8 2-6.2.4"/>
+        <path d="M117.4 33.3c5.9-1.4 13.9-7.4 11.8-10.3-2.4-3.2-9.8 4.4-10.2 10.8-.5 7.2 8.1 4.5 14.1-1.4"/>
+        <path d="M144.7 23.1c-4.7-4.1-11.9 3.9-13 10.6-1 6 3.4 5.2 7.3.5 2.7-3.3 5.3-7.7 7.1-11.4-1.4 5.2-5.3 15.3-2.2 15.2 2.2-.1 5.3-4 7-6.1"/>
+        <path d="M149.8 37.8c2-7.5 7.6-27.4 12.4-29.8 4.5-2.1-.2 8.6-8.5 17.2m.8 5.1c3.7-3.1 6.9-6 11.1-8.7m-10.9 8.6c3.4 1.1 4.7 4.9 6.7 6.4 2.1 1.7 5.3.1 8.3-2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="72" viewBox="0 0 80 72">
+  <title>Speak from the heart</title>
+  <desc>A small oxblood heart with a closing double quotation mark in lichen green.</desc>
+  <defs>
+    <filter id="cut-ink" x="-3%" y="-4%" width="106%" height="108%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".42 .59" numOctaves="2" seed="17" result="fibres"/>
+      <feDisplacementMap in="SourceGraphic" in2="fibres" scale=".7" xChannelSelector="R" yChannelSelector="G" result="edge"/>
+      <feColorMatrix in="fibres" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -.48 0 0 0 1.18" result="coverage"/>
+      <feComposite in="edge" in2="coverage" operator="in"/>
+    </filter>
+  </defs>
+  <g filter="url(#cut-ink)">
+    <path fill="#762A32" d="M36.7 62.2
+      C28.2 54.4 7.2 41.3 6.8 26.8
+      C6.5 17.1 13.1 10.5 21.3 10.5
+      C29.1 10.5 34.4 15.5 38.1 22.3
+      C43.2 11.2 51.9 5.4 60.6 7.4
+      C69.9 9.5 73.9 17.4 72.6 26.1
+      C70.7 39.1 53.1 51.4 36.7 62.2 Z"/><path fill="#B7C58C" d="M27.2 43.8
+      C31.2 40.6 33.5 37.1 34.0 33.6
+      C30.6 34.6 27.8 33.2 27.7 30.5
+      C27.5 27.7 29.7 25.8 32.7 25.6
+      C36.7 25.4 38.6 28.1 38.2 32.0
+      C37.6 37.5 32.6 42.5 28.1 44.9 Z M40.4 42.2
+      C44.5 39.0 46.8 35.6 47.3 32.1
+      C43.9 33.1 41.1 31.7 41.0 29.0
+      C40.9 26.2 43.1 24.3 46.1 24.1
+      C50.1 23.9 51.8 26.7 51.4 30.5
+      C50.8 36.1 46.0 40.9 41.3 43.3 Z"/>
+  </g>
+</svg>

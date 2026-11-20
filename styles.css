@@ -16,8 +16,8 @@
 
 :root {
   --paper: #f8f7f1;
-  --ink: #20251c;
-  --muted: #505648;
+  --ink: #080808;
+  --muted: #242424;
   --rule: #c6c8bc;
   --heading: "Geist Serif", Georgia, serif;
 }
@@ -103,6 +103,18 @@ main {
   width: clamp(5rem, 10vw, 7rem);
   height: auto;
   margin-inline-start: auto;
+}
+@media screen and (max-width: 48rem), screen and (hover: none) and (pointer: coarse) {
+  html { scroll-padding-top: 6rem; }
+  .masthead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: .5rem max(1.5rem, calc((100% - 38rem) / 2));
+    background: var(--paper);
+  }
+  .skip-link:focus { z-index: 2; }
 }
 .home-vision h1 { font-size: clamp(1.0625rem, 4.5vw, 1.375rem); }
 .home-vision h1 a { text-decoration: none; }
